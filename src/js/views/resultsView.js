@@ -1,5 +1,5 @@
 import icons from 'url:../../img/icons.svg';
-import View from './view';
+import View from './View';
 class ResultsView extends View {
     _parentElement = document.querySelector('.results');
     _errorMessage = 'Search not possible please try again or Type correct recipe';
