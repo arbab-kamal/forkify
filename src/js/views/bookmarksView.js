@@ -1,5 +1,5 @@
 import icons from 'url:../../img/icons.svg';
-import View from './view';
+import View from './View';
 class bookmarkView extends View {
   _parentElement = document.querySelector('.bookmarks__list');
   _errorMessage = 'No Bookmark yet Find New Recipe';
