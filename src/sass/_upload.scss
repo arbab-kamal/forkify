@@ -97,3 +97,48 @@
     justify-self: center;
   }
 }
+@media (max-width: 768px) {
+  .add-recipe-window {
+    width: 90%; /* Adjust width for small devices */
+    padding: 2rem 3rem; /* Reduce padding for small devices */
+  }
+
+  .btn--close-modal {
+    font-size: 2.5rem; /* Adjust button size */
+    top: 0.5rem;
+    right: 1rem;
+  }
+
+  .upload {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+    gap: 2rem;
+
+    &__column {
+      grid-template-columns: 1fr; /* Single column for each input */
+      gap: 1rem;
+
+      & input {
+        font-size: 1.3rem; /* Adjust font size */
+        padding: 0.6rem 0.8rem;
+      }
+
+      & button {
+        margin-top: 1rem;
+        font-size: 1.3rem; /* Adjust button font size */
+      }
+    }
+
+    &__heading {
+      font-size: 1.8rem; /* Adjust heading size */
+      margin-bottom: 1rem;
+    }
+
+    &__btn {
+      font-size: 1.4rem; /* Adjust button font size */
+    }
+  }
+
+  .overlay {
+    backdrop-filter: blur(3px); /* Slightly reduce blur for performance on smaller devices */
+  }
+}
