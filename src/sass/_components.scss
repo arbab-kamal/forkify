@@ -211,3 +211,78 @@
     font-weight: 600;
   }
 }
+@media (max-width: 768px) {
+  .btn {
+    padding: 1.25rem 3rem; /* Reduce padding */
+    font-size: 1.4rem; /* Adjust font size */
+    svg {
+      height: 2rem;
+      width: 2rem; /* Adjust icon size */
+    }
+  }
+
+  .btn--small {
+    padding: 1rem 1.75rem; /* Adjust padding */
+    font-size: 1.3rem; /* Adjust font size */
+    svg {
+      height: 1.5rem;
+      width: 1.5rem; /* Adjust icon size */
+    }
+  }
+
+  .btn--inline {
+    padding: 0.6rem 1rem; /* Adjust padding */
+    font-size: 1.2rem; /* Adjust font size */
+    svg {
+      height: 1.4rem;
+      width: 1.4rem; /* Adjust icon size */
+    }
+    span {
+      margin: 0 0.3rem;
+    }
+  }
+
+  .btn--round {
+    height: 4rem;
+    width: 4rem; /* Adjust round button size */
+    svg {
+      height: 2.2rem;
+      width: 2.2rem; /* Adjust icon size */
+    }
+  }
+
+  .btn--tiny {
+    height: 1.8rem;
+    width: 1.8rem; /* Adjust tiny button size */
+    svg {
+      height: 1.8rem;
+      width: 1.8rem; /* Adjust icon size */
+    }
+  }
+
+  .heading--2 {
+    font-size: 1.8rem; /* Adjust heading size */
+    margin-bottom: 2rem; /* Adjust margin */
+  }
+
+  .spinner {
+    margin: 3rem auto; /* Adjust margin */
+    svg {
+      height: 4rem;
+      width: 4rem; /* Adjust spinner size */
+    }
+  }
+
+  .message,
+  .error {
+    padding: 4rem 2.5rem; /* Reduce padding */
+    svg {
+      height: 2.5rem;
+      width: 2.5rem; /* Adjust icon size */
+    }
+
+    p {
+      font-size: 1.6rem; /* Adjust text size */
+    }
+  }
+}
