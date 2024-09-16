@@ -142,3 +142,58 @@
     opacity: 1;
   }
 }
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack logo and nav vertically */
+    align-items: flex-start;
+    padding: 1rem; /* Adjust padding */
+    
+    &__logo {
+      margin-left: 2rem; /* Reduce margin for smaller screen */
+      height: 3.5rem; /* Reduce logo size */
+    }
+  }
+
+  .search {
+    padding-left: 2rem; /* Reduce padding */
+    width: 100%; /* Make search bar take full width */
+
+    &__field {
+      font-size: 1.5rem; /* Adjust font size */
+      width: 100%; /* Take up full width */
+    }
+
+    &__btn {
+      font-size: 1.4rem; /* Adjust button font size */
+    }
+  }
+
+  .nav {
+    width: 100%; /* Full width navigation */
+    margin-right: 0; /* Remove right margin */
+    
+    &__list {
+      flex-direction: column; /* Stack nav items vertically */
+      width: 100%; /* Full width */
+    }
+
+    &__item {
+      width: 100%; /* Ensure each item takes full width */
+    }
+
+    &__btn {
+      padding: 1rem; /* Adjust padding */
+      font-size: 1.2rem; /* Adjust font size */
+      width: 100%; /* Make button fill container */
+    }
+  }
+
+  .bookmarks {
+    width: 100%; /* Full width bookmarks */
+    right: 0; /* Adjust positioning */
+
+    &__field {
+      padding: 1rem 2rem; /* Adjust padding */
+    }
+  }
+}
