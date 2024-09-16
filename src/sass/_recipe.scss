@@ -177,3 +177,57 @@
     font-weight: 700;
   }
 }
+@media (max-width: 768px) {
+  .recipe {
+    &__fig {
+      height: 20rem; /* Reduce figure height for smaller screens */
+    }
+
+    &__title {
+      font-size: 2.25rem; /* Reduce title font size */
+      width: 80%; /* Adjust width */
+      transform: translate(-50%, 10%); /* Adjust positioning for smaller screens */
+
+      @media only screen and (max-width: 500px) {
+        font-size: 2rem; /* Further reduce font size for very small screens */
+      }
+    }
+
+    &__details {
+      padding: 5rem 3rem 2rem 3rem; /* Reduce padding */
+      flex-direction: column; /* Stack elements vertically */
+      align-items: flex-start;
+    }
+
+    &__info {
+      font-size: 1.5rem; /* Adjust info font size */
+      margin-right: 2rem; /* Reduce margin */
+      &:not(:last-child) {
+        margin-bottom: 1rem; /* Add margin for stacking */
+      }
+    }
+
+    &__info-buttons {
+      margin-left: 0.5rem; /* Reduce margin */
+      justify-content: center; /* Center buttons */
+    }
+
+    &__ingredients {
+      padding: 3rem 4rem; /* Adjust padding */
+    }
+
+    &__ingredient-list {
+      grid-template-columns: 1fr; /* Single column layout for ingredients */
+      gap: 2rem; /* Adjust gap */
+    }
+
+    &__directions {
+      padding: 3rem 5rem; /* Adjust padding */
+    }
+
+    &__directions-text {
+      font-size: 1.5rem; /* Adjust font size */
+      margin-bottom: 2.5rem; /* Adjust margin */
+    }
+  }
+}
